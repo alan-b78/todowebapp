@@ -1,0 +1,28 @@
+{
+  "name": "todo_web_app_v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "csrf-csrf": "^3.0.4",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "express-layout": "^0.1.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "lusca": "^1.7.0",
+    "mysql": "^2.18.1",
+    "sanitize-html": "^2.13.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.13.0"
+  }
+}

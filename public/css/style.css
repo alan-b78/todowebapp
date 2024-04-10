@@ -1,0 +1,265 @@
+html {
+    height: 100%
+  }
+  
+  body {
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+  
+  }
+  
+  
+  button {
+      background:none;
+      border:none;
+      margin:0;
+      padding:0;
+      cursor: pointer;
+      width: 800px;
+      text-align: left;
+  }
+  
+  #container {
+    width: 800px;
+    display: block;
+    margin: 25px auto;
+    margin-top: 70px;
+  }
+  
+  #container input {
+    margin: 15px 0;
+    width: 820px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-color: rgba(0,0,0,.05) rgba(0,0,0,.08) rgba(0,0,0,.1);
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0,0,0,.05);
+  }
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+td {
+  max-width: 200px; /* Set a fixed width for table cells */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+}
+
+tr.todo-row {
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+/* Styling for todo message */
+.todo-message {
+  display: inline-block; /* Ensure inline block for wrapping */
+  max-width: calc(100% - 230px); /* Set a maximum width for the todo message, considering button width */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+}
+
+.button-container {
+  display: flex; /* Use flexbox for button container */
+  align-items: center; /* Align buttons vertically */
+}
+
+.button-container button {
+  margin-left: 5px; /* Add margin between buttons */
+  padding: 8px 16px; /* Add padding inside the buttons */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.button-container button:hover {
+  background-color: #45a049; /* Darker green background on hover */
+}
+
+/* Center the contact section */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 70px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input fields */
+.contact-section input[type="email"],
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Style the submit button */
+.contact-section button[type="submit"] {
+  width: 100%; /* Set button width to 100% */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Style the headings and paragraphs */
+.contact-section h1 {
+  text-align: center;
+}
+
+.contact-section p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the user list container */
+.user-list {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the user list heading */
+.user-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the user list table */
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style the user list table headings */
+.user-list th {
+  padding: 10px;
+  text-align: left;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style the user list table rows */
+.user-list td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the alternating background color for table rows */
+.user-list tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.todo-input {
+  margin-bottom: 10px;
+  width: 300px; /* Adjust width as needed */
+}
+
+#add_todo_form {
+  display: flex;
+}
+
+#add_todo_input {
+  flex: 1;
+}
+
+#add_todo_button {
+  width: auto;
+}
+
+.table-wrapper {
+  height: 600px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.signup-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-section button[type="submit"] {
+  width: 100%; /* Set button width to 100% */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-section button[type="submit"] {
+  width: 100%; /* Set button width to 100% */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
