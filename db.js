@@ -5,7 +5,7 @@ function getConnection() {
     return mysql.createConnection({
         host: 'localhost',
         user: 'root',
-        password: 'Fg@P!r5!tw68uw!3',
+        password: 'your-password',
         database: 'users',
     });
 }
