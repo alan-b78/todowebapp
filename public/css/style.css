@@ -163,7 +163,7 @@ tr.todo-row {
 .user-list {
   max-width: 800px; /* Adjust as needed */
   margin: 0 auto;
-  padding: 20px;
+  padding: 70px;
   background-color: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -229,7 +229,7 @@ tr.todo-row {
 .signup-section {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 70px;
   background-color: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -262,4 +262,8 @@ tr.todo-row {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.padded-form {
+  padding: 70px;
 }
