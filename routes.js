@@ -17,7 +17,6 @@ const logger = winston.createLogger({
   ]
 });
 
-// Create tables if they don't exist
 db.createTables(conn);
 
 router.get('/', (req, res) => {   
@@ -36,7 +35,6 @@ router.get('/contact', (req, res) => {
 
 router.get('/add_todo', (req, res) => {
   if (!req.session.loggedIn) {
-    // Redirect to login if not logged in
     return res.redirect('/');
   }
 
@@ -47,12 +45,10 @@ router.post('/login', (req, res) => {
   
   const { username, password } = req.body;
 
-  // Check credentials against hashed password in the database
   const sql = 'SELECT * FROM usersAndRoles WHERE username = ?';
 
   conn.query(sql, [username], (err, results) => {
     if (err) {
-      //console.error('Error executing login query:', err);
       logger.error('Error executing login query:', err);
       return res.status(500).send('Error logging in.');
     }
@@ -68,10 +64,8 @@ router.post('/login', (req, res) => {
       req.session.username = username;
       req.session.role = userRole; 
       req.session.loggedIn = true;
-      // Passwords match, redirect to dashboard
       res.redirect('/add_todo');
     } else {
-      // Passwords do not match
       res.status(401).send('Invalid credentials.');
       res.redirect('/');
     }
@@ -106,11 +100,9 @@ router.post('/contact-us', (req, res) => {
   conn.query(queryString, [hashedEmail, sanitiseMessage], (err, results) => {
       if (err) {
           logger.error('Error occurred while saving contact:', err);
-          // console.error('Error occurred while saving contact:', err);
           res.status(500).send('Error occurred while saving contact');
       } else {
           logger.info('Contact saved successfully');
-          // console.log('Contact saved successfully');
           res.status(200).send('Contact saved successfully');
       }
   });
@@ -118,35 +110,27 @@ router.post('/contact-us', (req, res) => {
 
 router.get('/admin', (req, res) => {
   
-  // Check if user is logged in
   if (!req.session.loggedIn) {
-      // Redirect to login page if not logged in
       return res.redirect('/'); 
   }
 
-  // Check if user has admin role
   if (req.session.role !== 'admin') {
-      // Redirect to main app page if not an admin
       return res.redirect('/'); 
   }
 
-  // User is logged in and has admin role, proceed to fetch user list
   conn.query('SELECT username, role_name FROM usersAndRoles', (error, results, fields) => {
       if (error) {
           logger.error(error);
-          // console.error(error);
           return res.status(500).send('Internal Server Error');
       }
       res.render('admin', { users: results });
   });
 });
 
-// Logout route
 router.get('/logout', (req, res) => {
   req.session.destroy((err) => {
       if (err) {
         logger.error('Error destroying session:', err);
-          //console.error('Error destroying session:', err);
           return res.status(500).send('Error logging out.');
       }
       res.redirect('/'); 
@@ -159,17 +143,14 @@ router.get('/get_todos', (req, res) => {
   conn.query(queryString, [username], (err, rows, fields) => {
       if (err) {
           logger.info("Failed to query @ /get_todo: +" + err); 
-          // console.log("Failed to query @ /get_todo: +" + err);
       }
       logger.info("Getting data from database @ /get_todos");
-      //console.log("Getting data from database @ /get_todos");
       res.json(rows);
   });
 });
 
 router.post('/add_todo', (req, res) => {
   if (!req.session.loggedIn) {
-    // Redirect to login if not logged in
     return res.redirect('/');
   }
 
@@ -181,10 +162,8 @@ router.post('/add_todo', (req, res) => {
   conn.query(queryString, [sanitisedTodo, username], (err, rows, fields) => {
       if(err){
           logger.info("Failed to insert @ /add_todo: +" + " " + err);
-          // console.log("Failed to insert @ /add_todo: +" + " " + err);
       }
       logger.info("@/add_todo : " + todo + " added.");
-      // console.log("@/add_todo : " + todo + " added.");
       res.redirect('/add_todo');
   });
 });
@@ -195,11 +174,9 @@ router.post('/complete_todo/:id', (req, res) => {
   conn.query(queryString, [todo_id], (err, rows, fields) => {
       if (err){
           logger.info("Failed to complete todo @ /complete_todo: " + todo_id + " " + err);
-          // console.log("Failed to complete todo @ /complete_todo: " + todo_id + " " + err);
       }
   });
   logger.info("@/complete_todo/ completing todo with id " + todo_id);
-  //console.log("@/complete_todo/ completing todo with id " + todo_id);
   res.redirect('/add_todo');
 });
 
@@ -213,11 +190,9 @@ router.post('/update_todo/:id', (req, res) => {
   conn.query(queryString, [sanitiseTodoMessage, todo_id], (err, rows, fields) => {
       if(err){
           logger.info("Failed to update todo @ /update_todo: " + todo_id);
-          // console.log("Failed to update todo @ /update_todo: " + todo_id);
       }
   });
   logger.info("@/update_todo/ updating todo with message " + todo_Message);
-  // console.log("@/update_todo/ updating todo with message " + todo_Message);
   res.redirect('/add_todo');
 });
 
@@ -227,11 +202,9 @@ router.post('/delete_todo/:id', (req, res) => {
   conn.query(queryString, [todo_id], (err, rows, fields) => {
       if(err){
           logger.info("Failed to delete todo @ /delete_todo: " + todo_id);
-          // console.log("Failed to delete todo @ /delete_todo: " + todo_id);
       }
   });
-  logger.info("@/delete_todo/ deleting todo with id " + todo_id);   
- // console.log("@/delete_todo/ deleting todo with id " + todo_id);   
+  logger.info("@/delete_todo/ deleting todo with id " + todo_id);    
   res.redirect('/add_todo');
 });
 

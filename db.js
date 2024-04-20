@@ -40,12 +40,11 @@ function createTables(connection) {
         if (error) throw error;
         console.log('usersAndRoles table created successfully');
 
-        // Check if the admin user already exists before creating
         connection.query('SELECT * FROM usersAndRoles WHERE username = ?', ['admin'], (selectError, results) => {
             if (selectError) throw selectError;
             if (results.length === 0) {
                 const hashedPassword = bcryptUtils.hashPassword('admin');
-                // Admin user doesn't exist, create it
+                
                 connection.query(adminUserQuery, ['admin', hashedPassword, 'admin'], (adminError) => {
                     if (adminError) throw adminError;
                     console.log('Initial admin user created successfully');

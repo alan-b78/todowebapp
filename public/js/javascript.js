@@ -19,8 +19,7 @@ function getTodoData(todo_id, callback) {
     request.responseType = 'json';
     request.send();
     request.onload = function() {
-        console.log(request.status); // Log the status code        
-        console.log(request.response); // Log the response
+        
         if (request.status >= 200 && request.status < 400) {
             var todo = request.response;
             console.log("Todo contains: ", todo);
@@ -135,15 +134,12 @@ function saveTodo(todo_id, saveButton) {
     saveButton.style.display = "none";
     document.getElementById("edit_button_" + todo_id).style.display = "block";
 
-    // You can add code here to update the todo message on the server
-    // Prepare the data to send in the POST request
     var data = {
         todo_id: todo_id,
         todo_message: inputField.value,
         _csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
     };
 
-    // Make an HTTP POST request to update the todo
     var request = new XMLHttpRequest();
     var requestURL = '/update_todo/' + todo_id;
     request.open('POST', requestURL);
@@ -155,12 +151,8 @@ function saveTodo(todo_id, saveButton) {
     // Handle response from the server (optional)
     request.onload = function() {
         if (request.status >= 200 && request.status < 400) {
-            // Handle successful response if needed 
             console.log('Todo updated successfully');
-        } else {
-            
-            //console.error('Failed to update todo');
-        }
+        } 
     };
 };
 

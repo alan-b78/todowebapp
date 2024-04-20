@@ -30,17 +30,15 @@ const middlewares = [
           connectSrc: ["'self'"],
           fontSrc: ["'self'", "https://maxcdn.bootstrapcdn.com"],
           objectSrc: ["'none'"],
-          frameAncestors: ["'self'"], // Specify allowed frame ancestors
+          frameAncestors: ["'self'"], 
           formAction: ["'self'"],
           upgradeInsecureRequests: [],
         }
       },
-      // Set X-Content-Type-Options header to 'nosniff'
       nosniff: true
     }),
     (req, res, next) => {
       res.set('Content-Type', 'text/html');
-      // You can remove the setting of X-Content-Type-Options here
       next();
     }
 ]
