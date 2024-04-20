@@ -117,7 +117,6 @@ router.post('/contact-us', (req, res) => {
 });
 
 router.get('/admin', (req, res) => {
-  const loggedIn = req.session.loggedIn || false;
   
   // Check if user is logged in
   if (!req.session.loggedIn) {
@@ -128,10 +127,9 @@ router.get('/admin', (req, res) => {
   // Check if user has admin role
   if (req.session.role !== 'admin') {
       // Redirect to main app page if not an admin
-      return res.redirect('/admin'); 
+      return res.redirect('/'); 
   }
 
-  console.log("In the admin route before the query.");
   // User is logged in and has admin role, proceed to fetch user list
   conn.query('SELECT username, role_name FROM usersAndRoles', (error, results, fields) => {
       if (error) {

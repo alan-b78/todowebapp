@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../css/toastify.css">
         <script src="../js/toastify.js"></script>
         <script src="../js/javascript.js" charset="utf-8"></script>
-        <style> body { padding-top: 70px; /* Assuming your navbar height is 70px */ } </style>
+        <meta name="csrf-token" content="<%= csrfToken %>">
     </head>
     <body>
       <nav class="navbar navbar-inverse navbar-fixed-top bg-light">
@@ -44,7 +44,7 @@
             <button id="add_todo_button" type="submit" class="btn btn-primary">Add Todo</button> <!-- Add a button to submit the form -->
         </form>
 
-        <div style="overflow-x:auto;">
+        <div>
             <table class="table">
                 <thead>
                     <tr>

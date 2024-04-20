@@ -22,7 +22,9 @@ const middlewares = [
       contentSecurityPolicy: {
         directives: {
           defaultSrc: ["'self'"],
-          scriptSrc: ["'self'", "https://code.jquery.com", "https://maxcdn.bootstrapcdn.com"],
+          scriptSrc: ["'self'", 
+            "https://code.jquery.com", 
+            "https://maxcdn.bootstrapcdn.com"],
           styleSrc: ["'self'", "https://maxcdn.bootstrapcdn.com"],
           imgSrc: ["'self'"],
           connectSrc: ["'self'"],
@@ -54,7 +56,7 @@ app.use(session({
   saveUninitialized: true,
   cookie: {
     httpOnly: true,
-    secure: false,
+    secure: false, // set to true before deployment to live env
     sameSite: 'strict' 
   }    
 }));

@@ -263,3 +263,211 @@
 {"level":"info","message":"Getting data from database @ /get_todos"}
 {"level":"info","message":"Getting data from database @ /get_todos"}
 {"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":112,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Testing the delete functionality of this added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Test added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/delete_todo/ deleting todo with id 165"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/delete_todo/ deleting todo with id 166"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":113,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Another simple todo task to be added. added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/delete_todo/ deleting todo with id 167"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":114,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":115,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : List of todos added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Another todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/update_todo/ updating todo with message Another todo this to be editied"}
+{"level":"info","message":"@/update_todo/ updating todo with message List of todos"}
+{"level":"info","message":"@/update_todo/ updating todo with message List of todos more of the same"}
+{"level":"info","message":"@/complete_todo/ completing todo with id 169"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/complete_todo/ completing todo with id 168"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo :  added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Another simple todo task to be added. added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/delete_todo/ deleting todo with id 170"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/update_todo/ updating todo with message Another simple todos task to be added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":116,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : We can create lists of todos added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : We can create another added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Third todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/update_todo/ updating todo with message Third todo another todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":117,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":118,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":119,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : We can create Todos added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Another Todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : One more todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/update_todo/ updating todo with message We can create Todo another "}
+{"level":"info","message":"@/delete_todo/ deleting todo with id 175"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/complete_todo/ completing todo with id 177"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/delete_todo/ deleting todo with id 176"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":120,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Can add a todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Can add another todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Delete todos added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/update_todo/ updating todo with message Can add a todo edited"}
+{"level":"info","message":"@/complete_todo/ completing todo with id 179"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/delete_todo/ deleting todo with id 180"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Contact saved successfully"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":121,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":122,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Create todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Edit todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Complete todos added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Delete Todos added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/update_todo/ updating todo with message Edit todo another edit"}
+{"level":"info","message":"@/complete_todo/ completing todo with id 183"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/complete_todo/ completing todo with id 184"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/delete_todo/ deleting todo with id 182"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/update_todo/ updating todo with message Create todo edit"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Contact saved successfully"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":123,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"affectedRows":1,"changedRows":0,"fieldCount":0,"insertId":124,"level":"info","message":"User created successfully:","protocol41":true,"serverStatus":2,"warningCount":0}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Create todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Edit todo added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Complete todos added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/add_todo : Delete Todos added."}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/update_todo/ updating todo with message Edit todo another edit"}
+{"level":"info","message":"@/complete_todo/ completing todo with id 187"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"@/delete_todo/ deleting todo with id 188"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Getting data from database @ /get_todos"}
+{"level":"info","message":"Contact saved successfully"}

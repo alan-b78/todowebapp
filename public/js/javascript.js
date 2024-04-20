@@ -59,31 +59,31 @@ function printTodos(todos){
 
        // Complete Button
        var completeButton = document.createElement("button");
-       completeButton.setAttribute("onclick", "completeTodo(" + todo_id + ")");
        completeButton.id = "complete_button";
        completeButton.innerHTML = "Complete";
+       completeButton.addEventListener("click", function() { completeTodo(todo_id); });
        buttonContainer.appendChild(completeButton);
 
        // Edit Button
         var editButton = document.createElement("button");
-        editButton.setAttribute("onclick", "editTodo(" + todo_id + ", this)");
         editButton.id = "edit_button_" + todo_id;
         editButton.innerHTML = "Edit";
+        editButton.addEventListener("click", function() { editTodo(todo_id, this); });
         buttonContainer.appendChild(editButton);
 
         // Save Button
         var saveButton = document.createElement("button");
         saveButton.style.display = "none"; // Hide the save button initially
-        saveButton.setAttribute("onclick", "saveTodo(" + todo_id + ", this)");
         saveButton.id = "save_button_" + todo_id;
         saveButton.innerHTML = "Save";
+        saveButton.addEventListener("click", function() { saveTodo(todo_id, this); });
         buttonContainer.appendChild(saveButton);
 
        // Delete Button
        var deleteButton = document.createElement("button");
-       deleteButton.setAttribute("onclick", "deleteTodo(" + todo_id + ")");
        deleteButton.id = "delete_button";
        deleteButton.innerHTML = "Delete";
+       deleteButton.addEventListener("click", function() { deleteTodo(todo_id); });
        buttonContainer.appendChild(deleteButton);
 
        // Append button container to the todo cell
